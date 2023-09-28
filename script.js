@@ -9,8 +9,6 @@ const aqiSpan = document.querySelector(".aqi");
 const testSpan = document.querySelector(".test");
 const weatherImg = document.querySelector(".weatherImg");
 
-
-
 //əsas fetch atdığımız funksiya
 async function logWeather(city) {
   try {
@@ -24,6 +22,7 @@ async function logWeather(city) {
     console.log(weatherData);
 
     // melumatlari ekranda gostermek
+
     searchInput.style.width = "100%";
     card.classList.add("active");
     cityNameSpan.textContent = weatherData.name;
@@ -48,6 +47,13 @@ async function logWeather(city) {
       );
     } else if (weatherData.weather[0].main == "Sunny") {
       weatherImg.setAttribute("src", "./assets/images/01_sunny_color_w512.png");
+    }
+    if (weatherData.name == "Qazax") {
+      cityNameSpan.textContent = "Burda hava həmişə zordu";
+      timeSpan.style.display = "none";
+      testSpan.style.display = "none";
+      aqiSpan.style.display = "none";
+      weatherImg.setAttribute("src", "./assets/images/glass.png");
     }
   } catch (error) {
     console.error(error);
