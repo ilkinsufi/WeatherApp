@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forRel">
+        <input
+          class="searchInput"
+          type="text"
+          placeholder="Məsələn: Bakı"
+        /><svg
+          class="feather feather-search"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" x2="16.65" y1="21" y2="16.65" />
+        </svg>
+      </div>
+      <div class="card">
+        <div><span class="city">xx</span> <span class="time">XX</span></div>
+        <div>
+          <img
+            src="./assets/images//02_moon_stars_color_w512.png"
+            alt="weather"
+            class="weatherImg"
+          />
+        </div>
+        <div>
+          <span class="aqi">AQI 70</span><span class="test"> -5-05</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
